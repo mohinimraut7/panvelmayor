@@ -1,0 +1,8 @@
+स्थायी समितीच्या महत्त्वाच्या विषयांवर तसेच प्रभाग समित्यांच्या गठनाबाबत  चर्चा सुरू आहे.
+
+import meeting from "../assets/meeting.jpeg";
+
+let narangibridgepahani = null;
+try { narangibridgepahani = require("../assets/narangibridgeahani.jpeg"); } catch {}
+
+
