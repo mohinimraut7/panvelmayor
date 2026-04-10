@@ -4,12 +4,14 @@ import { useNavigate } from "react-router-dom";
 import heroBg from "../assets/nitinpatilsir3.png";
 
 import mayorPhoto from "../assets/nitinpatilsir.jpeg";
-import meeting from "../assets/meeting2.jpeg";
+import meeting from "../assets/nitinpatilsirgroup1.png";
 import tree from "../assets/tree.jfif";
 import pani from "../assets/pani3.jpg";
 import narangibridgepahani from "../assets/narangibridgeahani.jpeg";
 import logo from "../assets/logo2new.jpeg";
 import carousel1 from "../assets/nitinpatilsirC1.png";
+// import carousel1 from "../assets/lokarpan2.png";
+
 
 
 function LottiePlayer({ src, style, loop = true }) {
@@ -47,7 +49,8 @@ export default function Home() {
 
   // ── accent updated to #9095C4 / #6b72b0 ──
   const projects = [
-    { icon: "🌉", tag: "पायाभूत सुविधा", title: "नारंगी उड्डाणपूल प्रकल्प पाहणी", desc: "नारंगी येथील उड्डाणपुलाच्या कामाची मा. महापौर श्री.नितीन पाटील यांनी प्रत्यक्ष पाहणी केली. या पाहणीदरम्यान संबंधित अधिकारी, रेल्वे अधिकारी, कंत्राटदार व उपकंत्राटदार यांच्याशी चर्चा करून कामाची प्रगती व अडचणी जाणून घेतल्या. तसेच कामाला अधिक गती देण्याच्या सूचना दिल्या.", progress:'', status: "ongoing", statusLabel: "सुरू आहे", budget: "₹ 42 कोटी", deadline: "डिसेंबर 2025", stat: "", statLbl: "मार्च २०२६ अखेर वाहतुकीसाठी खुले", accent: "#9095C4", bgimg: carousel1 },
+    { icon: "🏛️", tag: "लोकार्पण", title: "'अ' प्रभाग समिती कार्यालयाचा लोकार्पण सोहळा.",desc:"हे कार्यालय स्थानिक नागरिकांसाठी सेवा-सुविधांचे केंद्र ठरणार असून, येथून नागरिकांना सरकारी योजना, विकासकामांची माहिती तसेच विविध सेवांचा लाभ सहजपणे मिळणार आहे.नागरिकांना प्रशासनाशी थेट संपर्क साधता येईल, अशा लोकाभिमुख व्यवस्थेमुळे प्रशासन अधिक कार्यक्षम होईल.",
+ progress:'', status: "ongoing", statusLabel: "सुरू आहे", budget: "₹ 42 कोटी", deadline: "डिसेंबर 2025", stat: "", statLbl: " ‘अ’ प्रभाग समिती कार्यालयाचा लोकार्पण सोहळा", accent: "#9095C4", bgimg: carousel1 },
     { icon: "🏛️", tag: "प्रशासन", title: "समिती गठनाबाबत चर्चा", desc: "स्थायी समितीच्या महत्त्वाच्या विषयांवर तसेच प्रभाग समित्यांच्या गठनाबाबत चर्चा सुरू आहे.", progress: '', status: "ongoing", statusLabel: "सुरू आहे", budget: "₹ 85 कोटी", deadline: "मार्च 2026", stat: "", statLbl: "", accent: "#6b72b0", bgimg: meeting },
     { icon: "💧", tag: "पाणीपुरवठा", title: "24×7 पाणीपुरवठा योजना ", desc: "पनवेल विभागातील नागरिकांना 24 तास शुद्ध पाणी उपलब्ध करण्यासाठी नवीन जलवाहिन्या टाकणे, जुन्या पाइपलाइनचे नूतनीकरण आणि नवीन पाण्याच्या टाक्या बांधणे.", progress:'', status: "ongoing", statusLabel: "सुरू आहे", budget: "₹ 85 कोटी", deadline: "मार्च 2026", stat: "1.2 लाख", statLbl: "लाभार्थी कुटुंबे", accent: "#9095C4", bgimg:pani },
     { icon: "🌳", tag: "पर्यावरण", title: "हरित पनवेल — वृक्षारोपण मोहीम", desc: "महानगरपालिका क्षेत्रात 5 लाख झाडे लावण्याचा संकल्प. उद्याने विकसित करणे, रस्त्यांच्या दुतर्फा झाडे लावणे आणि पर्यावरण संतुलन राखणे हे या प्रकल्पाचे उद्दिष्ट.", progress:'', status: "ongoing", statusLabel: "सुरू आहे", budget: "₹ 8 कोटी", deadline: "ऑगस्ट 2025", stat: "5 लाख", statLbl: "झाडे लावणार", accent: "#6b72b0", bgimg:tree},
@@ -671,7 +674,7 @@ export default function Home() {
                 backgroundPosition: "center"
               } : {}}
             >
-              <div className="proj-left" style={{ background: 'transparent', borderRight: 'none' }}>
+              <div className="proj-left" style={{ background: 'transparent', borderRight: 'none', }}>
                 <div className="proj-tag" style={{ background: `${p.accent}18`, color: p.accent }}>{p.icon} {p.tag}</div>
                 <div className="proj-title">{p.title}</div>
                 <p className="proj-desc">{p.desc}</p>
