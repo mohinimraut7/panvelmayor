@@ -159,21 +159,34 @@ export default function Home() {
         /* ══ HERO ══ */
         // .hero { position:relative; min-height:calc(100vh - 64px); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:80px 24px 72px; overflow:hidden; }
 .hero { position:relative; min-height:calc(100vh - 64px); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:80px 24px 72px; overflow:hidden; background:linear-gradient(135deg, #262C50 0%, #242645 100%); }
-        // .hero::before { content:''; position:absolute; inset:0; background-image:url(${heroBg}); background-size:cover; background-position:center; background-repeat:no-repeat; z-index:0; }
-        /* REPLACE this line in your Home.jsx <style> block */
-.hero::before { content:''; position:absolute; inset:0px 0; background-image:url(${heroBg}); background-size:contain; background-position:left center; background-repeat:no-repeat; z-index:0; }
-        // .hero::after { content:''; position:absolute; inset:0; background:rgba(40,120,120,0.72); z-index:1; }
-        // .hero::after { content:''; position:absolute; inset:0; background:rgba(84,89,149,0.8); z-index:1; }
-        // .hero::after { content:''; position:absolute; inset:0; background:linear-gradient(135deg, rgba(61,66,128,0.80) 0%, rgba(50,55,107,0.80) 100%); z-index:1; }
-     .hero::after {
+       
+
+.hero::before { 
+content:'';
+ position:absolute;
+  inset:0px 0; 
+  background-image:url(${heroBg});
+ background-size:contain;
+  background-position:left center;
+   background-repeat:no-repeat;
+    z-index:0; 
+    background-color: #272D51;  /* ← हे add करा */
+ }
+
+        
+
+
+
+.hero::after {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(61,66,128,0.80) 0%,
-    rgba(50,55,107,0.80) 70%,
-    rgba(213,186,71,0.30) 100%
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0) 40%,
+    rgba(38,44,80,0.75) 65%,
+    rgba(38,44,80,0.90) 100%
   );
   z-index: 1;
 }

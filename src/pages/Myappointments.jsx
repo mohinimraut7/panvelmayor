@@ -3135,7 +3135,7 @@ export default function MyAppointments() {
           padding: 11px 22px;
           border-radius: 10px;
           border: none;
-          background: linear-gradient(135deg, #3a9aaf, #2e8a9e);
+          background: linear-gradient(135deg, #3A3D72,#3A3D72);
           color: #fff;
           font-weight: 700;
           font-size: 14px;
@@ -3185,7 +3185,7 @@ export default function MyAppointments() {
           padding: 7px 18px;
           border-radius: 20px;
           border: 1.5px solid #d4b870;
-          background: #fffef8;
+          background:#3A3D72;
           font-size: 13px;
           font-weight: 600;
           cursor: pointer;
@@ -3222,7 +3222,7 @@ export default function MyAppointments() {
           grid-template-columns: ${COL_TEMPLATE};
           align-items: center;
           padding: 0 24px;
-          background: linear-gradient(135deg, #3a9aaf, #2a7a8e);
+          background: linear-gradient(135deg, #3A3D72,#3A3D72);
           min-height: 52px;
           width: 100%;
         }
@@ -3473,6 +3473,7 @@ export default function MyAppointments() {
                   key={t.key}
                   className={`ftab${filter===t.key?" active":""}`}
                   onClick={() => { setFilter(t.key); setChecked([]); setAllChecked(false); setPage(1); }}
+                  // style={{backgroundColor:'green'}}
                 >
                   {t.label} ({t.key==="all" ? appts.length : appts.filter(a=>a.status===t.key).length})
                 </button>
