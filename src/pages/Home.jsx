@@ -173,9 +173,7 @@ content:'';
     background-color: #272D51;  /* ← हे add करा */
  }
 
-        
-
-
+      
 
 .hero::after {
   content: '';
